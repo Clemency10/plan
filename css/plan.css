@@ -145,3 +145,19 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+.icon{
+  width:2em;
+  height:2em;
+  fill:#aaa;
+}
+
+.name{
+  color:#aaa;
+  margin-bottom:0px;
+  font-size:0.8em;
+}
+
+.icon_card{
+  min-width:10em;
+}
