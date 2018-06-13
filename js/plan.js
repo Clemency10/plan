@@ -26,3 +26,8 @@
   });
 
 })(jQuery); // End of use strict
+
+// initialize all tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

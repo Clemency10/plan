@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   padding-top: 54px;
   color: #868e96;
 }
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -131,15 +131,19 @@ section.plan-section .plan-item .plan-date {
 }
 
 .bg-primary {
-  background-color: #0190de !important;
+  background-color: #4787ed !important;
 }
 
 .text-primary {
-  color: #0190de !important;
+  color: #4787ed !important;
+}
+
+.btn-primary{
+  background: #4787ed !important;
 }
 
 a {
-  color: #0190de;
+  color: #4787ed;
 }
 
 a:hover, a:focus, a:active {
@@ -165,4 +169,51 @@ a:hover, a:focus, a:active {
 
 .t_height{
   height: 4px;
+}
+
+.card-group .card:first-child{
+  margin-left:0;
+  margin-top:0;
+
+}
+
+.card-group .card+.card{
+  border: 0px;
+  margin-top: 0px;
+}
+
+.rcard{
+  min-width:100%;
+  border: 0;
+  box-shadow: 0 0 4px 3px #ececec;
+  margin: 0 20px 20px 0;
+
+}
+
+.card-group .card.rcard:hover{
+  box-shadow: 0 0 8px 3px #ccc;
+  cursor: pointer;
+}
+
+.label-tip{
+  width: 13px;
+  height:13px;
+  fill:#868e96;
+}
+
+.card_viewmore{
+  color:#007bff;
+  font-size:14px;
+}
+
+.view_more{
+  width: 18px;
+  height: 18px;
+  fill: #868e96;
+}
+
+.btn-icon{
+  fill: #FFF;
+  width: 13px;
+  height: 13px;
 }
