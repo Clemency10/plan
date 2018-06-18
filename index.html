@@ -1,111 +1,427 @@
-<!DOCTYPE html>
+<!-DOCTYPE html->
 <html lang="en">
+<head>
 
-  <head>
+  <!-- code Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Jquery Imports -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+  <script src="vendor/jquery/jquery-ui.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet'
+  type='text/css'>
+
 
     <title>Plan</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+  rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/plan.css" rel="stylesheet">
+  <!-- Exteral CSS & JS -->
 
-  </head>
+  <!-- Bootstrap core CSS & JS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- This was missing at first OMG u will need this in ur custom js code sia why never import -->
 
-  <body id="page-top">
+  <!-- Semantic CSS & Js -->
+  <link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+  <script src="vendor/semantic/semantic.min.js"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Plan</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/plan.png" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#color">Color Scheme</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#typography">Typography</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#filter">Filter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#card">Card</a>
-          </li>
-          <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#icon">Icons</a>
-          </li>
-        </ul>
+  <!-- Custom scripts for this template -->
+  <script src="js/plan.min.js"></script>
+  <!-- this was the code that needed bootstrap.js -->
+
+  <!-- scripts for svg icons -->
+  <script defer src="js/svgxuse.js"></script>
+
+  <!-- Custom CSS -->
+  <link href="css/plan.css" rel="stylesheet">
+
+
+
+  <script>
+  $(document).ready(function () {
+    $("#slider-range").slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [75, 300],
+      slide: function (event, ui) {
+        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+      }
+    });
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+    " - $" + $("#slider-range").slider("values", 1));
+    </script>
+
+
+  <script>
+  $(document).ready(function () {
+    $('.ui.dropdown')
+    .dropdown();
+
+  }
+);
+</script>
+</head>
+
+<body id="page-top">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Plan</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/plan.png" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#color">Color Scheme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#typography">Typography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#filter">Filter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#card">Card</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#icon">Icons</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid p-0">
+
+  <section class="plan-section p-3 p-lg-5 d-flex d-column" id="intro">
+    <div class="my-auto">
+      <h1 class="mb-0">Style</h1>
+    </div>
+  </section>
+
+  <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="typography">
+    <div class="my-auto">
+      <h2 class="mb-5">Typo</h2>
+    </div>
+  </section>
+
+  <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="color">
+    <div class="my-auto">
+      <h2 class="mb-5">color scheme</h2>
+    </div>
+  </section>
+
+
+<section class="plan-section p-3 p-lg-5 d-flex flex-column" id="filter">
+  <div class="my-auto">
+    <h2 class="mb-5">Filter</h2>
+    <p class="header">Category</p>
+    <button class="ui button">
+      Healthcare
+    </button>
+    <button class="ui button">
+      Education
+    </button>
+    <button class="ui button">
+      Industrial
+    </button>
+    <button class="ui button">
+      Social
+    </button>
+    <br>
+
+    <p class="header">Facility Type</p>
+
+
+    <button class="ui button">
+      <svg class="iconsmall icon-spread">
+        <use xlink:href="icon/symbol-defs.svg#icon-spread"></use>
+      </svg>All
+    </button>
+
+    <button class="ui button">
+      <svg class="iconsmall icon-stethoscope">
+        <use xlink:href="icon/symbol-defs.svg#icon-stethoscope"></use>
+      </svg>Public Hospitals
+    </button>
+
+    <button class="ui button">
+      <svg class="iconsmall icon-medkit">
+        <use xlink:href="icon/symbol-defs.svg#icon-medkit"></use>
+      </svg>Private Hospitals
+    </button>
+
+    <button class="ui button">
+      <svg class="iconsmall icon-user-md">
+        <use xlink:href="icon/symbol-defs.svg#icon-user-md"></use>
+      </svg>Polyclinics
+    </button>
+
+    <button class="ui button">
+      <svg class="iconsmall icon-building">
+        <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
+      </svg>Senior Care Centres
+    </button>
+
+    <button class="ui button">
+      <svg class="iconsmall icon-home-1">
+        <use xlink:href="icon/symbol-defs.svg#icon-home-1"></use>
+      </svg>Senior Activity Centres
+    </button>
+
+    <br>
+
+
+    <p class="header">Target Group</p>
+
+    <div style="width:410px;">
+      <select class="ui search dropdown">
+        <option value="se">Select</option>
+        <option value="to">Total</option>
+        <option value="di">Disabled</option>
+        <option value="al">Alone</option>
+        <option value="fr">Frequent Admitters</option>
+        <option value="he">Healthy</option>
+        option value="se">Semi-Dependent</option>
+        <option value="re">Rec Chronic Screening</option>
+        <option value="de">Dependent</option>
+        <option value="fu">Functional Screening</option>
+      </select>
+    </div>
+
+    <br><br>
+
+    <div style="width:410px;">
+      <select name="target" multiple="" class="ui fluid dropdown">
+        <option value="">Select</option>
+        <option value="to">Total</option>
+        <option value="di">Disabled</option>
+        <option value="al">Alone</option>
+        <option value="fr">Frequent Admitters</option>
+        <option value="he">Healthy</option>
+        option value="se">Semi-Dependent</option>
+        <option value="re">Rec Chronic Screening</option>
+        <option value="de">Dependent</option>
+        <option value="fu">Functional Screening</option>
+      </select>
+    </div>
+    <br><br><br>
+
+    <p class="header">Service Radius</p>
+
+    <div style="width:410px;">
+      <div style="width:310px; float:left;">
+        <div class="slidecontainer">
+          <input type="range" min="1" max="800" value="400" class="slider" id="myRange">
+        </div>
       </div>
-    </nav>
+      <div style="width:100px; float:right;">
+        <div class="inputbox"><span id="demo"></span> metres</div>
+      </div>
+    </div>
 
-    <div class="container-fluid p-0">
 
-      <section class="plan-section p-3 p-lg-5 d-flex d-column" id="intro">
-        <div class="my-auto">
-          <h1 class="mb-0">Style
-            
-          </h1>
+    <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
 
-          <p class="mb-5">Quick introduction on the style guide</p>
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }
+    </script>
 
-        </div>
-      </section>
+    <br><br><br>
 
-      <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="color">
-        <div class="my-auto">
-          <h2 class="mb-5">color scheme</h2>
 
-          <p class="mb-5">Color schemes here.</p>
+    <div id="slider-range"></div>
 
-        </div>
+    <script>
+    $(document).ready(function () {
+      $("#slider-range").slider();
+    });
+    </script>
 
-      </section>
+    <br><br><br>
 
-      <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="typography">
-        <div class="my-auto">
-          <h2 class="mb-5">Typo</h2>
+    <p class="header">Aggregation</p>
+    <button class="ui button">
+      Planning Area
+    </button>
 
-          <p class="mb-5">Typography here.</p>
+    <button class="ui button">
+      GRC
+    </button>
 
-        </div>
-      </section>
+    <button class="ui button">
+      Wards
+    </button>
+    <br><br><br>
 
-      <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="filter">
-            <div class="my-auto">
-              <h2 class="mb-5">Filter</h2>
-              <p class="mb-5">Filter components here.</p>
-    
-            </div>
-      </section>
+    <p class="header">Round Buttons</p>
+    <button class="circular ui icon button">
+      <svg class="iconmedium icon-power icon-inverse">
+        <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
+      </svg>
+    </button>
+
+    <button class="circular ui icon button">
+      <svg class="iconmedium icon-power icon-inverse">
+        <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
+      </svg>
+    </button>
+
+    <button class="circular ui icon button">
+      <svg class="iconmedium icon-power icon-inverse" width="50px" height="50px">
+        <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
+      </svg>
+    </button>
+
+    <button class="circular ui icon button">
+      <svg class="iconmedium icon-power icon-inverse">
+        <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
+      </svg>
+    </button>
+  </div>
+
+  <br><br>
+
+  <!--<script>-->
+  <!--// Add active class to the current button (highlight it)-->
+  <!--var header = document.getElementById("round");-->
+  <!--var btns = header.getElementsByClassName("btn");-->
+  <!--for (var i = 0; i < btns.length; i++) {-->
+  <!--btns[i].addEventListener("click", function () {-->
+  <!--var current = document.getElementsByClassName("active");-->
+  <!--current[0].className = current[0].className.replace(" active", "");-->
+  <!--this.className += " active";-->
+  <!--});-->
+  <!--}-->
+  <!--</script>-->
+
+  <p class="header">Toggle Buttons</p>
+
+
+
+  <table style="width: 410px; font-size: 12px;">
+    <tr>
+      <td>&#x25A8;</td>
+      <td>Overlay 1</td>
+      <td><div class="ui toggle checkbox">
+        <input type="checkbox" name="public">
+        <label></label>
+      </div></td>
+    </tr>
+    <tr>
+      <td>&#x25A8;</td>
+      <td>Overlay 2</td>
+      <td><div class="ui toggle checkbox">
+        <input type="checkbox" name="public">
+        <label></label>
+      </div></td>
+    </tr>
+    <tr>
+      <td>&#x25A8;</td>
+      <td>Overlay 3</td>
+      <td><div class="ui toggle checkbox">
+        <input type="checkbox" name="public">
+        <label></label>
+      </div></td>
+    </tr>
+  </table>
+
+  <br><br><br>
+
+  <p class="header">Numeric Up Down Control </p>
+
+  <div class="ui right labeled input" style="width:80px;">
+    <input type="text" id="txtNum" value="5">
+    <div class="ui mini vertical buttons" >
+      <button class="ui icon button" command="Up"> <svg class="icon icon-angle-up">
+        <use xlink:href="icon/symbol-defs.svg#icon-angle-up"></use>
+      </svg>
+
+    </button>
+    <button class="ui icon button" command="Down"> <svg class="icon icon-angle-down">
+      <use xlink:href="icon/symbol-defs.svg#icon-angle-down"></use>
+    </svg>
+
+  </button>
+</div>
+</div>
+
+<br><br><br>
+
+<script>
+// Constants
+var KEY_UP = 38,
+KEY_DOWN = 40;
+
+// Variables
+var min = 0,
+max = 30,
+step = 1;
+
+$('.ui.icon.button').click(function () {
+var command = $(this).attr('command');
+HandleUpDown(command);
+});
+
+$('#txtNum').keypress(function (e) {
+var code = e.keyCode;
+if (code != KEY_UP && code != KEY_DOWN) return;
+var command = code == KEY_UP ? 'Up' : code == KEY_DOWN ? 'Down' : '';
+HandleUpDown(command);
+});
+
+function HandleUpDown(command) {
+var val = $('#txtNum').val().trim();
+var num = val !== '' ? parseInt(val) : 0;
+
+switch (command) {
+  case 'Up':
+  if (num < max) num += step;
+  break;
+  case 'Down':
+  if (num > min) num -= step;
+  break;
+}
+
+$('#txtNum').val(num);
+}
+</script>
+</div>
+</section>
 
       <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="card">
         <div class="my-auto">
           <h2 class="mb-5">Card</h2>
           <p class="lead">Results cards #1</p>
-          <p>Example of results cards with progress indicator bars</p>  
+          <p>Example of results cards with progress indicator bars</p>
           <div class="card-group">
             <div class="card rcard">
                 <div class="card-body">
@@ -150,7 +466,7 @@
                             <svg class="view_more">
                             <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
                             </svg>
-                        </span>                        
+                        </span>
                     </h6>
                     <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
                     <span class="card-text text-uppercase" style="float:right;">364/1000</span>
@@ -165,14 +481,14 @@
             <hr>
             <p class="lead">Results cards #2</p>
             <p>Example of results cards with some key statistics and progress indicator bars</p>
-            <div style="margin: 15px 0;">   
+            <div style="margin: 15px 0;">
                 <span>Sort by:</span>
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                     <button type="button" class="btn btn-primary">
                             <svg class="btn-icon">
                                 <use xlink:href="icon/symbol-defs.svg#icon-sort-amount-asc"></use>
                             </svg>
-                    </button>              
+                    </button>
                     <div class="btn-group" role="group">
                     <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Metric
@@ -185,7 +501,7 @@
                     </div>
                     </div>
                 </div>
-            </div>      
+            </div>
             <div class="card-group">
             <div class="card rcard">
                 <div class="card-body">
@@ -205,7 +521,7 @@
                                         <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
                                 </svg>
                           </span>
-                          
+
                           <p style="font-size:20px; color:#333;">600</p>
                         </div>
                         <div class="col">
@@ -217,8 +533,8 @@
                           <p style="font-size:20px; color:#333;">400</p>
                         </div>
                     </div>
-                    
-                    
+
+
                     <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
                     <span class="card-text text-uppercase" style="float:right;">600/1000</span>
                     <div class="progress mb-1 mt-1 t_height">
@@ -249,7 +565,7 @@
                                             <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
                                     </svg>
                               </span>
-                              
+
                               <p style="font-size:20px; color:#333;">400</p>
                             </div>
                             <div class="col">
@@ -261,8 +577,8 @@
                               <p style="font-size:20px; color:#333;">600</p>
                             </div>
                         </div>
-                       
-                        
+
+
                         <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
                         <span class="card-text text-uppercase" style="float:right;">400/1000</span>
                         <div class="progress mb-1 mt-1 t_height">
@@ -293,7 +609,7 @@
                                                 <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
                                         </svg>
                                   </span>
-                                  
+
                                   <p style="font-size:20px; color:#333;">300</p>
                                 </div>
                                 <div class="col">
@@ -305,8 +621,8 @@
                                   <p style="font-size:20px; color:#333;">700</p>
                                 </div>
                             </div>
-                            
-                            
+
+
                             <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
                             <span class="card-text text-uppercase" style="float:right;">300/1000</span>
                             <div class="progress mb-1 mt-1 t_height">
@@ -337,7 +653,7 @@
                                                 <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
                                         </svg> -->
                                   </span>
-                                  
+
                                   <p style="font-size:26px; color:#333;">1</p>
                                 </div>
                                 <div class="col">
@@ -379,7 +695,7 @@
                     <div class="card-body">
                         <svg class="icon icon-sort-amount-desc"><use xlink:href="icon/symbol-defs.svg#icon-sort-amount-desc"></use></svg><br><span class="name"> sort-amount-desc</span>
                     </div>
-            </div>    
+            </div>
             <div class="card text-center icon_card">
                 <div class="card-body">
                     <svg class="icon icon-directions_walk"><use xlink:href="icon/symbol-defs.svg#icon-directions_walk"></use></svg><br><span class="name"> icon-directions_walk</span>
@@ -1286,26 +1602,12 @@
                 </div>
             </div>
               </div>
-    
+
             </div>
           </section>
 
-    </div>
+</div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/plan.js"></script>
-
-    <!-- scripts for svg icons -->
-    <script defer src="js/svgxuse.js"></script>
-
-
-  </body>
-
-</html>
+</html> 

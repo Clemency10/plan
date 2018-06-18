@@ -32,6 +32,16 @@ h2 {
   font-size: 3.5rem;
 }
 
+p.header {
+  /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+    font-family: 'Open Sans', serif;
+  font-size:11.5px;
+    font-weight: bold;
+  color: dimgrey;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
@@ -111,7 +121,7 @@ section.plan-section {
 }
 
 section.plan-section .plan-item .plan-date {
-  min-width: none;
+  /*min-width: none;*/
 }
 
 @media (min-width: 768px) {
@@ -216,4 +226,171 @@ a:hover, a:focus, a:active {
   fill: #FFF;
   width: 13px;
   height: 13px;
+}
+.iconsmall {
+    width:1.35em;
+    height:1.35em;
+    fill:dimgrey;
+    margin-right: 13px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+
+.iconmedium {
+    width:2.05em;
+    height:2.05em;
+    fill:dimgrey;
+    position: relative;
+    vertical-align: middle;
+}
+
+.ui.circular.button {
+    background-color: #e2e2e2;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    height: 50px;
+    width: 50px;
+    margin-right :20px;
+    margin-top :20px;
+    margin-bottom :20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.inputbox {
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  font-size: 12px;
+  text-align:center;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  color: #666666;
+  border-color: #f1f1f1;
+  /* padding: 0 25px; */
+  /* margin-left: 10px; */
+  margin-top: 8px;
+}
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+    width: 300px;
+    height: 40px;
+}
+
+/*square slide handle*/
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+
+    border-radius:50px;
+    -ms-touch-action: none;
+    touch-action: none;
+    background: #82C785;
+    border-color: #82C785;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+
+.ui-slider-horizontal {
+    height: 5px;
+}
+
+.ui.button {
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    color: #666666;
+    border-color: #f1f1f1;
+    margin-right :20px;
+    margin-bottom :20px;
+    font-family: 'Open Sans', serif;
+    font-weight: normal;
+}
+
+.ui.button:hover {
+    background-color: #4485ed;
+    color: #fff;
+}
+
+.ui.button:focus {
+    background-color: #4485ed;
+    color: #fff;
+}
+
+.ui.button:active,
+.ui.active.button:active {
+    background-color: #4485ed;
+    color: #fff;
+}
+
+.ui.active.button {
+    background-color: #4485ed;
+    color: #fff;
+}
+
+.ui.active.button:hover {
+    background-color: #4485ed;
+    color: #fff;
+}
+
+.ui.active.button:active {
+    background-color: #4485ed;
+    color: #fff;
 }
