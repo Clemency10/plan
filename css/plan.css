@@ -120,10 +120,6 @@ section.plan-section {
     padding-bottom: 5rem !important;
 }
 
-section.plan-section .plan-item .plan-date {
-    /*min-width: none;*/
-}
-
 @media (min-width: 768px) {
     section.plan-section {
         min-height: 100vh;
