@@ -25,7 +25,7 @@ $(function() {
     target: '#sideNav'
   });
 
-})(jQuery); // End of use strict
+}); // End of use strict
 
 // initialize all tooltips
 $(function () {
