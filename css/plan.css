@@ -40,7 +40,6 @@ p.header {
     color: dimgrey;
     text-transform: uppercase;
     white-space: nowrap;
-    display: inline-block;
 }
 
 .subheading {
@@ -311,15 +310,31 @@ a:hover, a:focus, a:active {
 .ui-slider {
     position: relative;
     text-align: left;
+    /* width: 300px;
+    height: 40px; */
     width: 300px;
-    height: 40px;
+    height: 5px;
+    border-radius: 5px;
+    border-color:none;
 }
+
+/* .slider {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 20px;
+} */
 
 /*square slide handle*/
 .ui-slider .ui-slider-handle {
     position: absolute;
     z-index: 2;
-
     border-radius:50px;
     -ms-touch-action: none;
     touch-action: none;
@@ -330,14 +345,16 @@ a:hover, a:focus, a:active {
     width: 25px;
     height: 25px;
     cursor: pointer;
+    margin-top: -5px;
 }
 .ui-slider .ui-slider-range {
     position: absolute;
     z-index: 1;
     font-size: .7em;
     display: block;
-    border: 0;
+    border: none;
     background-position: 0 0;
+    color: #000000;
 }
 
 /* support: IE8 - See #6727 */
@@ -353,7 +370,7 @@ a:hover, a:focus, a:active {
 .ui.button {
     display: inline-block;
     padding: 0 10px;
-    height: 30px;
+    height: 20px;
     font-size: 12px;
     line-height: 20px;
     border-radius: 25px;
@@ -371,28 +388,24 @@ a:hover, a:focus, a:active {
     color: #fff;
 }
 
+.ui.button:hover svg {
+    fill: #fff;
+}
+
 .ui.button:focus {
     background-color: #4485ed;
     color: #fff;
 }
 
-.ui.button:active,
-.ui.active.button:active {
-    background-color: #4485ed;
+.ui.button:focus svg {
+    fill: #fff;
+}
+
+.ui.button:active {
+    background-color: #1e70bf;
     color: #fff;
 }
 
-.ui.active.button {
-    background-color: #4485ed;
-    color: #fff;
-}
-
-.ui.active.button:hover {
-    background-color: #4485ed;
-    color: #fff;
-}
-
-.ui.active.button:active {
-    background-color: #4485ed;
-    color: #fff;
+.ui.button:active svg {
+    fill: #fff;
 }
