@@ -28,7 +28,7 @@
 
   <!-- Bootstrap core CSS & JS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <!-- This was missing at first OMG u will need this in ur custom js code sia why never import -->
 
   <!-- Semantic CSS & Js -->
@@ -94,526 +94,663 @@
 
     <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="typography">
       <div class="my-auto">
-        <h2 class="mb-5">Typo</h2>
-      </div>
-    </section>
+        <h2 class="mb-5">Typography</h2>
 
-    <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="color">
-      <div class="my-auto">
-        <h2 class="mb-5">color scheme</h2>
-      </div>
-    </section>
+        <div class="container">
+          <div class="row" style="margin-bottom:20px">
+            <p class="header" >Font Family</p><br>
+          </div>
 
-    <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="filter">
-      <div class="my-auto">
-        <h2 class="mb-5">Filter</h2>
+          <div class="row" style="margin-bottom:20px; margin-left:20px;">
+            <p class="h2">Lucida Sans Unicode, Lucida Grande, Sans Serif</p>
+          </div><br>
 
-        <div class="ui accordion">
-          <div class="title active">
-            <i class="dropdown icon"></i>
-            <p class="header" style="display: inline;">Category</p>
+          <div class="row" style="background-color: #f7f7f7; margin-bottom:20px;">
+            <pre style = "margin-bottom: 0; margin-left: -7em;">
+              <code class="language-html" data-lang="html">
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+              </code></pre>
+            </div><br>
+
+            <div class="row" style="margin-bottom:20px">
+              <p class="header">Font Scale</p><br>
+            </div>
+            <div class="row" style="background-color: ; margin-bottom:20px; margin-left:20px;">
+              <div class="bd-example">
+                <p class="h1">h1. Header h1</p>
+                <p class="h2">h2. Header h2</p>
+                <p class="h3">h3. Header h3</p>
+                <p class="h4">h4. Header h4</p>
+                <p class="h5">h5. Header h5</p>
+                <p class="h6">h6. Header h6</p>
+              </div>
+            </div><br>
+            <div class="row" style="background-color: #f7f7f7;">
+              <pre style = "margin-bottom: 0; margin-left: -8em;">
+                <code class="language-html" data-lang="html">
+                  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>h1. Header h1<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>h2. Header h2<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>h3. Header h3<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>h4. Header h4<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>h5. Header h5<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h6. Header h6<span class="nt">&lt;/p&gt;</span>
+                </code></pre>
+              </div>
+            </div>
           </div>
-          <div class="content active">
-            <p class="transition visible" style="display: block !important;">
-              <p class="header">Text Button</p>
-              <button class="ui button">
-                Healthcare
-              </button>
-              <button class="ui button">
-                Education
-              </button>
-              <button class="ui button">
-                Industrial
-              </button>
-              <button class="ui button">
-                Social
-              </button>
-              <br>
-            </p>
+
+        </section>
+
+        <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="color">
+          <div class="my-auto">
+            <h2 class="mb-5">color scheme</h2>
+
+            <div class="container">
+              <p class="header" >3-Class Palettes</p><br>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Blues</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#deebf7; color: #636363; margin: 10px;">#deebf7</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#9ecae1; color: #636363; margin: 10px;">#9ecae1</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#4292c6; color: #f0f0f0; margin: 10px;">#4292c6</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Greens</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#e5f5e0; color: #636363; margin: 10px;">#e5f5e0</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#a1d99b; color: #636363; margin: 10px;">#a1d99b</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#41ab5d; color: #f0f0f0; margin: 10px;">#41ab5d</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Oranges</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#fdd0a2; color: #636363; margin: 10px;">#fdd0a2</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#fd8d3c; color: #636363; margin: 10px;">#fd8d3c</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#f16913; color: #f0f0f0; margin: 10px;">#f16913</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Purples</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#efedf5; color: #636363; margin: 10px;">#efedf5</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#bcbddc; color: #636363; margin: 10px;">#bcbddc</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#756bb1; color: #f0f0f0; margin: 10px;">#756bb1</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Reds</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#fee0d2; color: #636363; margin: 10px;">#fee0d2</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#fc9272; color: #636363; margin: 10px;">#fc9272</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#de2d26; color: #f0f0f0; margin: 10px;">#de2d26</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Greys</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#f0f0f0; color: #636363; margin: 10px;">#f0f0f0</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#bdbdbd; color: #636363; margin: 10px;">#bdbdbd</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; background:#636363; color: #f0f0f0; margin: 10px;">#636363</div>
+              </div>
+            </div>
+            <br><br>
+
+            <div class="container">
+              <p class="header" >5-Class Palettes</p><br>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Blues</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#c6dbef; margin: 10px;">#c6dbef</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#9ecae1; margin: 10px;">#9ecae1</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#6baed6; margin: 10px;">#6baed6</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#4292c6; margin: 10px;">#4292c6</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#2171b5; margin: 10px;">#2171b5</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Green</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#c7e9c0; margin: 10px;">#c7e9c0</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#a1d99b; margin: 10px;">#a1d99b</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#74c476; margin: 10px;">#74c476</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#41ab5d; margin: 10px;">#41ab5d</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#238b45; margin: 10px;">#238b45</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Oranges</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#fdd0a2; margin: 10px;">#fdd0a2</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#fdae6b; margin: 10px;">#fdae6b</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#fd8d3c; margin: 10px;">#fd8d3c</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#f16913; margin: 10px;">#f16913</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#d94801; margin: 10px;">#d94801</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Purples</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#dadaeb; margin: 10px;">#dadaeb</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#cbc9e2; margin: 10px;">#cbc9e2</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#9e9ac8; margin: 10px;">#9e9ac8</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#756bb1; margin: 10px;">#756bb1</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#6a51a3; margin: 10px;">#6a51a3</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Reds</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#fcbba1; margin: 10px;">#fcbba1</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#fc9272; margin: 10px;">#fc9272</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#fb6a4a; margin: 10px;">#fb6a4a</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#de2d26; margin: 10px;">#de2d26</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#cb181d; margin: 10px;">#cb181d</div>
+              </div>
+              <div class="row">
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; margin: 10px;"><p class="header" style="font-size:13px;">Greys</p></div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#f7f7f7; margin: 10px;">#f7f7f7</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #636363; background:#cccccc; margin: 10px;">#cccccc</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#969696; margin: 10px;">#969696</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#737373; margin: 10px;">#737373</div>
+                <div style="display: flex; align-items: center; justify-content: center; height:110px; width:110px; font-size: 12px; color: #f0f0f0; background:#525252; margin: 10px;">#525252</div>
+              </div>
+            </div>
+
           </div>
-          <div class="title">
-            <i class="dropdown icon"></i>
-            <p class="header" style="display: inline;">Facility Type</p>
-          </div>
-          <div class="content">
+        </section>
+
+        <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="filter">
+          <div class="my-auto">
+            <h2 class="mb-5">Filter</h2>
+
+            <div class="ui accordion">
+              <div class="title active">
+                <i class="dropdown icon"></i>
+                <p class="header" style="display: inline;">Category</p>
+              </div>
+              <div class="content active">
+                <p class="transition visible" style="display: block !important;">
+                  <p class="header">Text Button</p>
+                  <button class="ui button">
+                    Healthcare
+                  </button>
+                  <button class="ui button">
+                    Education
+                  </button>
+                  <button class="ui button">
+                    Industrial
+                  </button>
+                  <button class="ui button">
+                    Social
+                  </button>
+                  <br>
+                </p>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                <p class="header" style="display: inline;">Facility Type</p>
+              </div>
+              <div class="content">
+                <br>
+                <p class="header">Text Button with Icon</p>
+                <button class="ui button">
+                  <svg class="iconsmall icon-spread">
+                    <use xlink:href="icon/symbol-defs.svg#icon-spread"></use>
+                  </svg>All
+                </button>
+
+                <button class="ui button">
+                  <svg class="iconsmall icon-stethoscope">
+                    <use xlink:href="icon/symbol-defs.svg#icon-stethoscope"></use>
+                  </svg>Public Hospitals
+                </button>
+
+                <button class="ui button">
+                  <svg class="iconsmall icon-medkit">
+                    <use xlink:href="icon/symbol-defs.svg#icon-medkit"></use>
+                  </svg>Private Hospitals
+                </button>
+
+                <button class="ui button">
+                  <svg class="iconsmall icon-user-md">
+                    <use xlink:href="icon/symbol-defs.svg#icon-user-md"></use>
+                  </svg>Polyclinics
+                </button>
+
+                <button class="ui button">
+                  <svg class="iconsmall icon-building">
+                    <use xlink:href="icon/symbol-defs.svg#icon-building"></use>
+                  </svg>Senior Care Centres
+                </button>
+
+                <button class="ui button">
+                  <svg class="iconsmall icon-home-1">
+                    <use xlink:href="icon/symbol-defs.svg#icon-home-1"></use>
+                  </svg>Senior Activity Centres
+                </button>
+
+                <br>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                <p class="header" style="display: inline;">Target Group</p>
+              </div>
+              <div class="content">
+                <br>
+                <p class="header">Single Search Dropdown</p>
+                <div style="width:410px;">
+                  <select class="ui search dropdown">
+                    <option value="se">Select</option>
+                    <option value="to">Total</option>
+                    <option value="di">Disabled</option>
+                    <option value="al">Alone</option>
+                    <option value="fr">Frequent Admitters</option>
+                    <option value="he">Healthy</option>
+                    <option value="se">Semi-Dependent</option>
+                    <option value="re">Rec Chronic Screening</option>
+                    <option value="de">Dependent</option>
+                    <option value="fu">Functional Screening</option>
+                  </select>
+                </div>
+
+                <br><br>
+                <p class="header">Multiple Select Dropdown</p>
+
+                <div style="width:100%;">
+                  <select name="target" multiple="" class="ui fluid dropdown">
+                    <option value="">Select</option>
+                    <option value="to">Total</option>
+                    <option value="di">Disabled</option>
+                    <option value="al">Alone</option>
+                    <option value="fr">Frequent Admitters</option>
+                    <option value="he">Healthy</option>
+                    <option value="se">Semi-Dependent</option>
+                    <option value="re">Rec Chronic Screening</option>
+                    <option value="de">Dependent</option>
+                    <option value="fu">Functional Screening</option>
+                  </select>
+                </div>
+                <br>
+
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon" ></i>
+                <p class="header" style="display: inline;">Service Radius</p>
+              </div>
+              <div class="content">
+                <br>
+                <p class="header">Range Slider</p>
+                <div style="width:410px;">
+                  <div style="width:310px; float:left;">
+                    <div class="slidecontainer">
+                      <input type="range" min="1" max="800" value="400" class="slider" id="myRange">
+                    </div>
+                  </div>
+
+                  <div style="width:100px; float:right;">
+                    <div class="inputbox"><span id="demo"></span> metres</div>
+                  </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <p class="header">Double Slider</p><br>
+                <div id="slider-range"></div><br>
+
+                <input id="amount"> metres
+
+                <br>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                <p class="header" style="display: inline;">Aggregation</p>
+              </div>
+              <div class="content">
+                <br>
+                <p class="header">Text Button</p>
+                <button class="ui button">
+                  Planning Area
+                </button>
+
+                <button class="ui button">
+                  GRC
+                </button>
+
+                <button class="ui button">
+                  Wards
+                </button>
+                <br><br><br>
+              </div>
+            </div>
+            <!-- end of accordion -->
+
             <br>
-            <p class="header">Text Button with Icon</p>
-            <button class="ui button">
-              <svg class="iconsmall icon-spread">
-                <use xlink:href="icon/symbol-defs.svg#icon-spread"></use>
-              </svg>All
-            </button>
 
-            <button class="ui button">
-              <svg class="iconsmall icon-stethoscope">
-                <use xlink:href="icon/symbol-defs.svg#icon-stethoscope"></use>
-              </svg>Public Hospitals
-            </button>
+            <p class="header">Round Buttons</p>
 
-            <button class="ui button">
-              <svg class="iconsmall icon-medkit">
-                <use xlink:href="icon/symbol-defs.svg#icon-medkit"></use>
-              </svg>Private Hospitals
-            </button>
-
-            <button class="ui button">
-              <svg class="iconsmall icon-user-md">
-                <use xlink:href="icon/symbol-defs.svg#icon-user-md"></use>
-              </svg>Polyclinics
-            </button>
-
-            <button class="ui button">
-              <svg class="iconsmall icon-building">
-                <use xlink:href="icon/symbol-defs.svg#icon-building"></use>
-              </svg>Senior Care Centres
-            </button>
-
-            <button class="ui button">
-              <svg class="iconsmall icon-home-1">
-                <use xlink:href="icon/symbol-defs.svg#icon-home-1"></use>
-              </svg>Senior Activity Centres
-            </button>
-
-            <br>
-          </div>
-          <div class="title">
-            <i class="dropdown icon"></i>
-            <p class="header" style="display: inline;">Target Group</p>
-          </div>
-          <div class="content">
-            <br>
-            <p class="header">Single Search Dropdown</p>
-            <div style="width:410px;">
-              <select class="ui search dropdown">
-                <option value="se">Select</option>
-                <option value="to">Total</option>
-                <option value="di">Disabled</option>
-                <option value="al">Alone</option>
-                <option value="fr">Frequent Admitters</option>
-                <option value="he">Healthy</option>
-                option value="se">Semi-Dependent</option>
-                <option value="re">Rec Chronic Screening</option>
-                <option value="de">Dependent</option>
-                <option value="fu">Functional Screening</option>
-              </select>
+            <div class="container">
+              <div class="row">
+                <div style="margin: 0 10px;">
+                  <button class="circular ui icon button">
+                    <svg class="iconmedium icon-transport icon-inverse">
+                      <use xlink:href="icon/symbol-defs.svg#icon-transport"></use>
+                    </svg>
+                  </button>
+                  <p style="font-size:14px; margin: 5px; text-align: center;">Train</p>
+                </div>
+                <div style="margin: 0 10px;">
+                  <button class="circular ui icon button">
+                    <svg class="iconmedium icon-ship icon-inverse">
+                      <use xlink:href="icon/symbol-defs.svg#icon-ship"></use>
+                    </svg>
+                  </button>
+                  <p style="font-size:14px; margin: 5px; text-align: center;">Ship</p>
+                </div>
+                <div style="margin: 0 10px;">
+                  <button class="circular ui icon button">
+                    <svg class="iconmedium icon-cab icon-inverse" width="50px" height="50px">
+                      <use xlink:href="icon/symbol-defs.svg#icon-cab"></use>
+                    </svg>
+                  </button>
+                  <p style="font-size:14px; margin: 5px; text-align: center;">Car</p>
+                </div>
+                <div style="margin: 0 10px;">
+                  <button class="circular ui icon button">
+                    <svg class="iconmedium icon-subway icon-inverse">
+                      <use xlink:href="icon/symbol-defs.svg#icon-subway"></use>
+                    </svg>
+                  </button>
+                  <p style="font-size:14px; margin: 5px; text-align: center;">Subway</p>
+                </div>
+              </div>
             </div>
 
             <br><br>
-            <p class="header">Multiple Select Dropdown</p>
 
-            <div style="width:100%;">
-              <select name="target" multiple="" class="ui fluid dropdown">
-                <option value="">Select</option>
-                <option value="to">Total</option>
-                <option value="di">Disabled</option>
-                <option value="al">Alone</option>
-                <option value="fr">Frequent Admitters</option>
-                <option value="he">Healthy</option>
-                <option value="se">Semi-Dependent</option>
-                <option value="re">Rec Chronic Screening</option>
-                <option value="de">Dependent</option>
-                <option value="fu">Functional Screening</option>
-              </select>
-            </div>
-            <br>
+            <p class="header">Toggle Buttons</p>
 
-          </div>
+            <table style="width: 410px; font-size: 14px; font-family: 'Open Sans';">
+              <tr>
+                <td>&#x25A8;</td>
+                <td>Overlay 1</td>
+                <td><div class="ui toggle checkbox">
+                  <input type="checkbox" name="public">
+                  <label></label>
+                </div></td>
+              </tr>
+              <tr>
+                <td>&#x25A8;</td>
+                <td>Overlay 2</td>
+                <td><div class="ui toggle checkbox">
+                  <input type="checkbox" name="public">
+                  <label></label>
+                </div></td>
+              </tr>
+              <tr>
+                <td>&#x25A8;</td>
+                <td>Overlay 3</td>
+                <td><div class="ui toggle checkbox">
+                  <input type="checkbox" name="public">
+                  <label></label>
+                </div></td>
+              </tr>
+            </table>
 
-          <div class="title">
-            <i class="dropdown icon" ></i>
-            <p class="header" style="display: inline;">Service Radius</p>
-          </div>
-          <div class="content">
-            <br>
-            <p class="header">Range Slider</p>
-            <div style="width:410px;">
-              <div style="width:310px; float:left;">
-                <div class="slidecontainer">
-                  <input type="range" min="1" max="800" value="400" class="slider" id="myRange">
-                </div>
-              </div>
-
-              <div style="width:100px; float:right;">
-                <div class="inputbox"><span id="demo"></span> metres</div>
-              </div>
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-            <p class="header">Double Slider</p><br>
-            <div id="slider-range"></div><br>
-
-            <input id="amount"> metres
-
-            <br>
-          </div>
-
-          <div class="title">
-            <i class="dropdown icon"></i>
-            <p class="header" style="display: inline;">Aggregation</p>
-          </div>
-          <div class="content">
-            <br>
-            <p class="header">Text Button</p>
-            <button class="ui button">
-              Planning Area
-            </button>
-
-            <button class="ui button">
-              GRC
-            </button>
-
-            <button class="ui button">
-              Wards
-            </button>
             <br><br><br>
-          </div>
-        </div>
-        <!-- end of accordion -->
 
-        <br>
+            <p class="header">Numeric Up Down Control </p>
 
-        <p class="header">Round Buttons</p>
-
-        <div class="container">
-          <div class="row">
-            <div style="margin: 0 10px;">
-              <button class="circular ui icon button">
-                <svg class="iconmedium icon-transport icon-inverse">
-                  <use xlink:href="icon/symbol-defs.svg#icon-transport"></use>
-                </svg>
-              </button>
-              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Train</p>
-            </div>
-            <div style="margin: 0 10px;">
-              <button class="circular ui icon button">
-                <svg class="iconmedium icon-ship icon-inverse">
-                  <use xlink:href="icon/symbol-defs.svg#icon-ship"></use>
-                </svg>
-              </button>
-              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Ship</p>
-            </div>
-            <div style="margin: 0 10px;">
-              <button class="circular ui icon button">
-                <svg class="iconmedium icon-cab icon-inverse" width="50px" height="50px">
-                  <use xlink:href="icon/symbol-defs.svg#icon-cab"></use>
-                </svg>
-              </button>
-              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Car</p>
-            </div>
-            <div style="margin: 0 10px;">
-              <button class="circular ui icon button">
-                <svg class="iconmedium icon-subway icon-inverse">
-                  <use xlink:href="icon/symbol-defs.svg#icon-subway"></use>
-                </svg>
-              </button>
-              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Subway</p>
-            </div>
-          </div>
-        </div>
-
-        <br><br>
-
-        <p class="header">Toggle Buttons</p>
-
-        <table style="width: 410px; font-size: 12px; font-family: 'Open Sans';">
-          <tr>
-            <td>&#x25A8;</td>
-            <td>Overlay 1</td>
-            <td><div class="ui toggle checkbox">
-              <input type="checkbox" name="public">
-              <label></label>
-            </div></td>
-          </tr>
-          <tr>
-            <td>&#x25A8;</td>
-            <td>Overlay 2</td>
-            <td><div class="ui toggle checkbox">
-              <input type="checkbox" name="public">
-              <label></label>
-            </div></td>
-          </tr>
-          <tr>
-            <td>&#x25A8;</td>
-            <td>Overlay 3</td>
-            <td><div class="ui toggle checkbox">
-              <input type="checkbox" name="public">
-              <label></label>
-            </div></td>
-          </tr>
-        </table>
-
-        <br><br><br>
-
-        <p class="header">Numeric Up Down Control </p>
-
-        <div class="ui right labeled input" style="width:60px; height:40px">
-          <input type="text" id="txtNum" value="5">
-          <div class="ui mini vertical buttons" >
-            <button class="ui icon button" command="Up" style="height:20px">
-              <svg class="icon icon-angle-up">
-                <use xlink:href="icon/symbol-defs.svg#icon-angle-up"></use>
-              </svg>
-            </button>
-
-            <button class="ui icon button" command="Down" style="height:20px">
-              <svg class="icon icon-angle-down">
-                <use xlink:href="icon/symbol-defs.svg#icon-angle-down"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <br><br><br>
-
-      </div>
-    </section>
-
-    <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="card">
-      <div class="my-auto">
-        <h2 class="mb-5">Card</h2>
-        <p class="lead">Results cards #1</p>
-        <p>Example of results cards with progress indicator bars</p>
-        <div class="card-group">
-          <div class="card rcard">
-            <div class="card-body">
-              <h6 class="card-title">Title
-                <span style="float:right">
-                  <svg class="view_more">
-                    <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+            <div class="ui right labeled input" style="width:60px; height:40px">
+              <input type="text" id="txtNum" value="5">
+              <div class="ui mini vertical buttons" >
+                <button class="ui icon button" command="Up" style="height:20px">
+                  <svg class="icon icon-angle-up">
+                    <use xlink:href="icon/symbol-defs.svg#icon-angle-up"></use>
                   </svg>
-                </span>
-              </h6>
-              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-              <span class="card-text text-uppercase" style="float:right;">625/1000</span>
-              <div class="progress mb-1 mt-1 t_height">
-                <div class="progress-bar" role="progressbar" style="width:62.5%;">
-                </div>
-              </div>
-              <span class="card-text text-uppercase" style="float:right; font-size:11px">62.5%</span>
-            </div>
-          </div>
-          <div class="card rcard">
-            <div class="card-body">
-              <h6 class="card-title">Title
-                <span style="float:right">
-                  <svg class="view_more">
-                    <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+                </button>
+
+                <button class="ui icon button" command="Down" style="height:20px">
+                  <svg class="icon icon-angle-down">
+                    <use xlink:href="icon/symbol-defs.svg#icon-angle-down"></use>
                   </svg>
-                </span>
-              </h6>
-              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-              <span class="card-text text-uppercase" style="float:right;">534/1000</span>
-              <div class="progress mb-1 mt-1 t_height">
-                <div class="progress-bar" role="progressbar" style="width:53.4%;">
+                </button>
+              </div>
+            </div>
+
+            <br><br><br>
+
+          </div>
+        </section>
+
+        <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="card">
+          <div class="my-auto">
+            <h2 class="mb-5">Card</h2>
+            <p class="lead">Results cards #1</p>
+            <p>Example of results cards with progress indicator bars</p>
+            <div class="card-group">
+              <div class="card rcard">
+                <div class="card-body">
+                  <h6 class="card-title">Title
+                    <span style="float:right">
+                      <svg class="view_more">
+                        <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+                      </svg>
+                    </span>
+                  </h6>
+                  <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+                  <span class="card-text text-uppercase" style="float:right;">625/1000</span>
+                  <div class="progress mb-1 mt-1 t_height">
+                    <div class="progress-bar" role="progressbar" style="width:62.5%;">
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="float:right; font-size:11px">62.5%</span>
                 </div>
               </div>
-              <span class="card-text text-uppercase" style="float:right; font-size:11px">53.4%</span>
+              <div class="card rcard">
+                <div class="card-body">
+                  <h6 class="card-title">Title
+                    <span style="float:right">
+                      <svg class="view_more">
+                        <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+                      </svg>
+                    </span>
+                  </h6>
+                  <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+                  <span class="card-text text-uppercase" style="float:right;">534/1000</span>
+                  <div class="progress mb-1 mt-1 t_height">
+                    <div class="progress-bar" role="progressbar" style="width:53.4%;">
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="float:right; font-size:11px">53.4%</span>
+                </div>
+              </div>
+              <div class="card rcard">
+                <div class="card-body">
+                  <h6 class="card-title">Title
+                    <span style="float:right">
+                      <svg class="view_more">
+                        <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+                      </svg>
+                    </span>
+                  </h6>
+                  <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+                  <span class="card-text text-uppercase" style="float:right;">364/1000</span>
+                  <div class="progress mb-1 mt-1 t_height">
+                    <div class="progress-bar" role="progressbar" style="width:36.4%;">
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="float:right; font-size:11px">36.4%</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card rcard">
-            <div class="card-body">
-              <h6 class="card-title">Title
-                <span style="float:right">
-                  <svg class="view_more">
-                    <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+            <hr>
+            <p class="lead">Results cards #2</p>
+            <p>Example of results cards with some key statistics and progress indicator bars</p>
+            <div style="margin: 15px 0;">
+              <span>Sort by:</span>
+              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">
+                  <svg class="btn-icon">
+                    <use xlink:href="icon/symbol-defs.svg#icon-sort-amount-asc"></use>
                   </svg>
-                </span>
-              </h6>
-              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-              <span class="card-text text-uppercase" style="float:right;">364/1000</span>
-              <div class="progress mb-1 mt-1 t_height">
-                <div class="progress-bar" role="progressbar" style="width:36.4%;">
+                </button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Metric
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Metric</a>
+                    <a class="dropdown-item" href="#">Metric</a>
+                    <a class="dropdown-item" href="#">Metric</a>
+                    <a class="dropdown-item" href="#">Metric</a>
+                  </div>
                 </div>
               </div>
-              <span class="card-text text-uppercase" style="float:right; font-size:11px">36.4%</span>
             </div>
-          </div>
-        </div>
-        <hr>
-        <p class="lead">Results cards #2</p>
-        <p>Example of results cards with some key statistics and progress indicator bars</p>
-        <div style="margin: 15px 0;">
-          <span>Sort by:</span>
-          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-primary">
-              <svg class="btn-icon">
-                <use xlink:href="icon/symbol-defs.svg#icon-sort-amount-asc"></use>
-              </svg>
-            </button>
-            <div class="btn-group" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Metric
-              </button>
-              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Metric</a>
-                <a class="dropdown-item" href="#">Metric</a>
-                <a class="dropdown-item" href="#">Metric</a>
-                <a class="dropdown-item" href="#">Metric</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-group">
-          <div class="card rcard">
-            <div class="card-body">
-              <h6 class="card-title text-center">Title</h6>
-              <div class="row text-center">
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">1000</p>
+            <div class="card-group">
+              <div class="card rcard">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Title</h6>
+                  <div class="row text-center">
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">1000</p>
+                    </div>
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">600</p>
+                    </div>
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">400</p>
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+                  <span class="card-text text-uppercase" style="float:right;">600/1000</span>
+                  <div class="progress mb-1 mt-1 t_height">
+                    <div class="progress-bar" role="progressbar" style="width:60%;">
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="float:right; font-size:11px">60%</span>
                 </div>
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">600</p>
-                </div>
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">400</p>
+                <div class="card-footer text-center text-primary">
+                  View more
                 </div>
               </div>
-              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-              <span class="card-text text-uppercase" style="float:right;">600/1000</span>
-              <div class="progress mb-1 mt-1 t_height">
-                <div class="progress-bar" role="progressbar" style="width:60%;">
+              <div class="card rcard">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Title</h6>
+                  <div class="row text-center">
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">1000</p>
+                    </div>
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">400</p>
+                    </div>
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">600</p>
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+                  <span class="card-text text-uppercase" style="float:right;">400/1000</span>
+                  <div class="progress mb-1 mt-1 t_height">
+                    <div class="progress-bar" role="progressbar" style="width:40%;">
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="float:right; font-size:11px">40%</span>
+                </div>
+                <div class="card-footer text-center text-primary">
+                  View more
                 </div>
               </div>
-              <span class="card-text text-uppercase" style="float:right; font-size:11px">60%</span>
-            </div>
-            <div class="card-footer text-center text-primary">
-              View more
-            </div>
-          </div>
-          <div class="card rcard">
-            <div class="card-body">
-              <h6 class="card-title text-center">Title</h6>
-              <div class="row text-center">
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">1000</p>
+              <div class="card rcard">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Title</h6>
+                  <div class="row text-center">
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">1000</p>
+                    </div>
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">300</p>
+                    </div>
+                    <div class="col">
+                      <span style="font-size:10px;">Metric
+                        <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
+                          <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                        </svg>
+                      </span>
+                      <p style="font-size:20px; color:#333;">700</p>
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+                  <span class="card-text text-uppercase" style="float:right;">300/1000</span>
+                  <div class="progress mb-1 mt-1 t_height">
+                    <div class="progress-bar" role="progressbar" style="width:30%;">
+                    </div>
+                  </div>
+                  <span class="card-text text-uppercase" style="float:right; font-size:11px">30%</span>
                 </div>
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">400</p>
-                </div>
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">600</p>
-                </div>
-              </div>
-              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-              <span class="card-text text-uppercase" style="float:right;">400/1000</span>
-              <div class="progress mb-1 mt-1 t_height">
-                <div class="progress-bar" role="progressbar" style="width:40%;">
-                </div>
-              </div>
-              <span class="card-text text-uppercase" style="float:right; font-size:11px">40%</span>
-            </div>
-            <div class="card-footer text-center text-primary">
-              View more
-            </div>
-          </div>
-          <div class="card rcard">
-            <div class="card-body">
-              <h6 class="card-title text-center">Title</h6>
-              <div class="row text-center">
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">1000</p>
-                </div>
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">300</p>
-                </div>
-                <div class="col">
-                  <span style="font-size:10px;">Metric
-                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                    </svg>
-                  </span>
-                  <p style="font-size:20px; color:#333;">700</p>
+                <div class="card-footer text-center text-primary">
+                  View more
                 </div>
               </div>
-              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-              <span class="card-text text-uppercase" style="float:right;">300/1000</span>
-              <div class="progress mb-1 mt-1 t_height">
-                <div class="progress-bar" role="progressbar" style="width:30%;">
+              <div class="card rcard">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Title</h6>
+                  <div class="row text-center">
+                    <div class="col">
+                      <span style="font-size:13px;">Metric
+                        <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                        <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                      </svg> -->
+                    </span>
+                    <p style="font-size:26px; color:#333;">1</p>
+                  </div>
+                  <div class="col">
+                    <span style="font-size:13px;">Metric
+                      <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg> -->
+                  </span>
+                  <p style="font-size:26px; color:#333;">1</p>
                 </div>
-              </div>
-              <span class="card-text text-uppercase" style="float:right; font-size:11px">30%</span>
-            </div>
-            <div class="card-footer text-center text-primary">
-              View more
-            </div>
-          </div>
-          <div class="card rcard">
-            <div class="card-body">
-              <h6 class="card-title text-center">Title</h6>
-              <div class="row text-center">
                 <div class="col">
                   <span style="font-size:13px;">Metric
-                    <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                    <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
                     <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
                   </svg> -->
                 </span>
-                <p style="font-size:26px; color:#333;">1</p>
+                <p style="font-size:26px; color:#333;">0</p>
               </div>
-              <div class="col">
-                <span style="font-size:13px;">Metric
-                  <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
-                  <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                </svg> -->
-              </span>
-              <p style="font-size:26px; color:#333;">1</p>
             </div>
-            <div class="col">
-              <span style="font-size:13px;">Metric
-                <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-                <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-              </svg> -->
-            </span>
-            <p style="font-size:26px; color:#333;">0</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </section>
 <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="icon">
   <div class="my-auto">

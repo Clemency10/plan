@@ -35,7 +35,7 @@ h2 {
 p.header {
     /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
     font-family: 'Open Sans', serif;
-    font-size:11.5px;
+    font-size:14px;
     font-weight: bold;
     color: dimgrey;
     text-transform: uppercase;
@@ -246,7 +246,6 @@ a:hover, a:focus, a:active {
     background-color: #e2e2e2;
     border-radius: 50px;
     text-align: center;
-    font-size: 12px;
     text-decoration: none;
     /*display: inline-block;*/
     height: 50px;
@@ -385,7 +384,7 @@ a:hover, a:focus, a:active {
     display: inline-block;
     padding: 0 10px;
     height: 24px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     border-radius: 25px;
     background-color: #f1f1f1;
@@ -423,3 +422,11 @@ a:hover, a:focus, a:active {
 .ui.button:active svg {
     fill: #fff;
 }
+
+.Greens .q0-3{
+  fill:rgb(229,245,224)
+  }
+
+.Greens .q1-3{fill:rgb(161,217,155)}
+
+.Greens .q2-3{fill:rgb(49,163,84)}
