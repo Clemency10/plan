@@ -115,7 +115,7 @@
           </div>
           <div class="content active">
             <p class="transition visible" style="display: block !important;">
-              <br>
+              <p class="header">Text Button</p>
               <button class="ui button">
                 Healthcare
               </button>
@@ -137,6 +137,7 @@
           </div>
           <div class="content">
             <br>
+            <p class="header">Text Button with Icon</p>
             <button class="ui button">
               <svg class="iconsmall icon-spread">
                 <use xlink:href="icon/symbol-defs.svg#icon-spread"></use>
@@ -181,6 +182,7 @@
           </div>
           <div class="content">
             <br>
+            <p class="header">Single Search Dropdown</p>
             <div style="width:410px;">
               <select class="ui search dropdown">
                 <option value="se">Select</option>
@@ -197,6 +199,7 @@
             </div>
 
             <br><br>
+            <p class="header">Multiple Select Dropdown</p>
 
             <div style="width:100%;">
               <select name="target" multiple="" class="ui fluid dropdown">
@@ -242,7 +245,7 @@
             <p class="header">Double Slider</p><br>
             <div id="slider-range"></div><br>
 
-              <input id="amount"> metres
+            <input id="amount"> metres
 
             <br>
           </div>
@@ -253,6 +256,7 @@
           </div>
           <div class="content">
             <br>
+            <p class="header">Text Button</p>
             <button class="ui button">
               Planning Area
             </button>
@@ -272,304 +276,325 @@
         <br>
 
         <p class="header">Round Buttons</p>
-        <button class="circular ui icon button">
-          <svg class="iconmedium icon-power icon-inverse">
-            <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
-          </svg>
-        </button>
 
-        <button class="circular ui icon button">
-          <svg class="iconmedium icon-power icon-inverse">
-            <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
-          </svg>
-        </button>
-
-        <button class="circular ui icon button">
-          <svg class="iconmedium icon-power icon-inverse" width="50px" height="50px">
-            <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
-          </svg>
-        </button>
-
-        <button class="circular ui icon button">
-          <svg class="iconmedium icon-power icon-inverse">
-            <use xlink:href="icon/symbol-defs.svg#icon-power"></use>
-          </svg>
-        </button>
-      </div>
-
-      <br><br>
-
-      <p class="header">Toggle Buttons</p>
-
-      <table style="width: 410px; font-size: 12px; font-family: 'Open Sans';">
-        <tr>
-          <td>&#x25A8;</td>
-          <td>Overlay 1</td>
-          <td><div class="ui toggle checkbox">
-            <input type="checkbox" name="public">
-            <label></label>
-          </div></td>
-        </tr>
-        <tr>
-          <td>&#x25A8;</td>
-          <td>Overlay 2</td>
-          <td><div class="ui toggle checkbox">
-            <input type="checkbox" name="public">
-            <label></label>
-          </div></td>
-        </tr>
-        <tr>
-          <td>&#x25A8;</td>
-          <td>Overlay 3</td>
-          <td><div class="ui toggle checkbox">
-            <input type="checkbox" name="public">
-            <label></label>
-          </div></td>
-        </tr>
-      </table>
-
-      <br><br><br>
-
-      <p class="header">Numeric Up Down Control </p>
-
-      <div class="ui right labeled input" style="width:60px; height:40px">
-        <input type="text" id="txtNum" value="5">
-        <div class="ui mini vertical buttons" >
-          <button class="ui icon button" command="Up">
-            <svg class="icon icon-angle-up">
-              <use xlink:href="icon/symbol-defs.svg#icon-angle-up"></use>
-            </svg>
-          </button>
-
-          <button class="ui icon button" command="Down">
-            <svg class="icon icon-angle-down">
-              <use xlink:href="icon/symbol-defs.svg#icon-angle-down"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <br><br><br>
-
-    </div>
-  </section>
-
-  <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="card">
-    <div class="my-auto">
-      <h2 class="mb-5">Card</h2>
-      <p class="lead">Results cards #1</p>
-      <p>Example of results cards with progress indicator bars</p>
-      <div class="card-group">
-        <div class="card rcard">
-          <div class="card-body">
-            <h6 class="card-title">Title
-              <span style="float:right">
-                <svg class="view_more">
-                  <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+        <div class="container">
+          <div class="row">
+            <div style="margin: 0 10px;">
+              <button class="circular ui icon button">
+                <svg class="iconmedium icon-transport icon-inverse">
+                  <use xlink:href="icon/symbol-defs.svg#icon-transport"></use>
                 </svg>
-              </span>
-            </h6>
-            <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-            <span class="card-text text-uppercase" style="float:right;">625/1000</span>
-            <div class="progress mb-1 mt-1 t_height">
-              <div class="progress-bar" role="progressbar" style="width:62.5%;">
-              </div>
+              </button>
+              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Train</p>
             </div>
-            <span class="card-text text-uppercase" style="float:right; font-size:11px">62.5%</span>
+            <div style="margin: 0 10px;">
+              <button class="circular ui icon button">
+                <svg class="iconmedium icon-ship icon-inverse">
+                  <use xlink:href="icon/symbol-defs.svg#icon-ship"></use>
+                </svg>
+              </button>
+              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Ship</p>
+            </div>
+            <div style="margin: 0 10px;">
+              <button class="circular ui icon button">
+                <svg class="iconmedium icon-cab icon-inverse" width="50px" height="50px">
+                  <use xlink:href="icon/symbol-defs.svg#icon-cab"></use>
+                </svg>
+              </button>
+              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Car</p>
+            </div>
+            <div style="margin: 0 10px;">
+              <button class="circular ui icon button">
+                <svg class="iconmedium icon-subway icon-inverse">
+                  <use xlink:href="icon/symbol-defs.svg#icon-subway"></use>
+                </svg>
+              </button>
+              <p style="font-size:14px; color:#333; margin: 5px; text-align: center;">Subway</p>
+            </div>
           </div>
         </div>
-        <div class="card rcard">
-          <div class="card-body">
-            <h6 class="card-title">Title
-              <span style="float:right">
-                <svg class="view_more">
-                  <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
-                </svg>
-              </span>
-            </h6>
-            <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-            <span class="card-text text-uppercase" style="float:right;">534/1000</span>
-            <div class="progress mb-1 mt-1 t_height">
-              <div class="progress-bar" role="progressbar" style="width:53.4%;">
-              </div>
-            </div>
-            <span class="card-text text-uppercase" style="float:right; font-size:11px">53.4%</span>
-          </div>
-        </div>
-        <div class="card rcard">
-          <div class="card-body">
-            <h6 class="card-title">Title
-              <span style="float:right">
-                <svg class="view_more">
-                  <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
-                </svg>
-              </span>
-            </h6>
-            <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-            <span class="card-text text-uppercase" style="float:right;">364/1000</span>
-            <div class="progress mb-1 mt-1 t_height">
-              <div class="progress-bar" role="progressbar" style="width:36.4%;">
-              </div>
-            </div>
-            <span class="card-text text-uppercase" style="float:right; font-size:11px">36.4%</span>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <p class="lead">Results cards #2</p>
-      <p>Example of results cards with some key statistics and progress indicator bars</p>
-      <div style="margin: 15px 0;">
-        <span>Sort by:</span>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-primary">
-            <svg class="btn-icon">
-              <use xlink:href="icon/symbol-defs.svg#icon-sort-amount-asc"></use>
-            </svg>
-          </button>
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Metric
+
+        <br><br>
+
+        <p class="header">Toggle Buttons</p>
+
+        <table style="width: 410px; font-size: 12px; font-family: 'Open Sans';">
+          <tr>
+            <td>&#x25A8;</td>
+            <td>Overlay 1</td>
+            <td><div class="ui toggle checkbox">
+              <input type="checkbox" name="public">
+              <label></label>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&#x25A8;</td>
+            <td>Overlay 2</td>
+            <td><div class="ui toggle checkbox">
+              <input type="checkbox" name="public">
+              <label></label>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&#x25A8;</td>
+            <td>Overlay 3</td>
+            <td><div class="ui toggle checkbox">
+              <input type="checkbox" name="public">
+              <label></label>
+            </div></td>
+          </tr>
+        </table>
+
+        <br><br><br>
+
+        <p class="header">Numeric Up Down Control </p>
+
+        <div class="ui right labeled input" style="width:60px; height:40px">
+          <input type="text" id="txtNum" value="5">
+          <div class="ui mini vertical buttons" >
+            <button class="ui icon button" command="Up" style="height:20px">
+              <svg class="icon icon-angle-up">
+                <use xlink:href="icon/symbol-defs.svg#icon-angle-up"></use>
+              </svg>
             </button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <a class="dropdown-item" href="#">Metric</a>
-              <a class="dropdown-item" href="#">Metric</a>
-              <a class="dropdown-item" href="#">Metric</a>
-              <a class="dropdown-item" href="#">Metric</a>
-            </div>
+
+            <button class="ui icon button" command="Down" style="height:20px">
+              <svg class="icon icon-angle-down">
+                <use xlink:href="icon/symbol-defs.svg#icon-angle-down"></use>
+              </svg>
+            </button>
           </div>
         </div>
+
+        <br><br><br>
+
       </div>
-      <div class="card-group">
-        <div class="card rcard">
-          <div class="card-body">
-            <h6 class="card-title text-center">Title</h6>
-            <div class="row text-center">
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+    </section>
+
+    <section class="plan-section p-3 p-lg-5 d-flex flex-column" id="card">
+      <div class="my-auto">
+        <h2 class="mb-5">Card</h2>
+        <p class="lead">Results cards #1</p>
+        <p>Example of results cards with progress indicator bars</p>
+        <div class="card-group">
+          <div class="card rcard">
+            <div class="card-body">
+              <h6 class="card-title">Title
+                <span style="float:right">
+                  <svg class="view_more">
+                    <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
                   </svg>
                 </span>
-                <p style="font-size:20px; color:#333;">1000</p>
+              </h6>
+              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+              <span class="card-text text-uppercase" style="float:right;">625/1000</span>
+              <div class="progress mb-1 mt-1 t_height">
+                <div class="progress-bar" role="progressbar" style="width:62.5%;">
+                </div>
               </div>
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                  </svg>
-                </span>
-                <p style="font-size:20px; color:#333;">600</p>
-              </div>
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                  </svg>
-                </span>
-                <p style="font-size:20px; color:#333;">400</p>
-              </div>
+              <span class="card-text text-uppercase" style="float:right; font-size:11px">62.5%</span>
             </div>
-            <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-            <span class="card-text text-uppercase" style="float:right;">600/1000</span>
-            <div class="progress mb-1 mt-1 t_height">
-              <div class="progress-bar" role="progressbar" style="width:60%;">
-              </div>
-            </div>
-            <span class="card-text text-uppercase" style="float:right; font-size:11px">60%</span>
           </div>
-          <div class="card-footer text-center text-primary">
-            View more
-          </div>
-        </div>
-        <div class="card rcard">
-          <div class="card-body">
-            <h6 class="card-title text-center">Title</h6>
-            <div class="row text-center">
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+          <div class="card rcard">
+            <div class="card-body">
+              <h6 class="card-title">Title
+                <span style="float:right">
+                  <svg class="view_more">
+                    <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
                   </svg>
                 </span>
-                <p style="font-size:20px; color:#333;">1000</p>
+              </h6>
+              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+              <span class="card-text text-uppercase" style="float:right;">534/1000</span>
+              <div class="progress mb-1 mt-1 t_height">
+                <div class="progress-bar" role="progressbar" style="width:53.4%;">
+                </div>
               </div>
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                  </svg>
-                </span>
-                <p style="font-size:20px; color:#333;">400</p>
-              </div>
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                  </svg>
-                </span>
-                <p style="font-size:20px; color:#333;">600</p>
-              </div>
+              <span class="card-text text-uppercase" style="float:right; font-size:11px">53.4%</span>
             </div>
-            <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-            <span class="card-text text-uppercase" style="float:right;">400/1000</span>
-            <div class="progress mb-1 mt-1 t_height">
-              <div class="progress-bar" role="progressbar" style="width:40%;">
-              </div>
-            </div>
-            <span class="card-text text-uppercase" style="float:right; font-size:11px">40%</span>
           </div>
-          <div class="card-footer text-center text-primary">
-            View more
+          <div class="card rcard">
+            <div class="card-body">
+              <h6 class="card-title">Title
+                <span style="float:right">
+                  <svg class="view_more">
+                    <use xlink:href="icon/symbol-defs.svg#icon-angle-right"></use>
+                  </svg>
+                </span>
+              </h6>
+              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+              <span class="card-text text-uppercase" style="float:right;">364/1000</span>
+              <div class="progress mb-1 mt-1 t_height">
+                <div class="progress-bar" role="progressbar" style="width:36.4%;">
+                </div>
+              </div>
+              <span class="card-text text-uppercase" style="float:right; font-size:11px">36.4%</span>
+            </div>
           </div>
         </div>
-        <div class="card rcard">
-          <div class="card-body">
-            <h6 class="card-title text-center">Title</h6>
-            <div class="row text-center">
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                  </svg>
-                </span>
-                <p style="font-size:20px; color:#333;">1000</p>
-              </div>
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                  </svg>
-                </span>
-                <p style="font-size:20px; color:#333;">300</p>
-              </div>
-              <div class="col">
-                <span style="font-size:10px;">Metric
-                  <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-                  </svg>
-                </span>
-                <p style="font-size:20px; color:#333;">700</p>
+        <hr>
+        <p class="lead">Results cards #2</p>
+        <p>Example of results cards with some key statistics and progress indicator bars</p>
+        <div style="margin: 15px 0;">
+          <span>Sort by:</span>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-primary">
+              <svg class="btn-icon">
+                <use xlink:href="icon/symbol-defs.svg#icon-sort-amount-asc"></use>
+              </svg>
+            </button>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Metric
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Metric</a>
+                <a class="dropdown-item" href="#">Metric</a>
+                <a class="dropdown-item" href="#">Metric</a>
+                <a class="dropdown-item" href="#">Metric</a>
               </div>
             </div>
-            <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
-            <span class="card-text text-uppercase" style="float:right;">300/1000</span>
-            <div class="progress mb-1 mt-1 t_height">
-              <div class="progress-bar" role="progressbar" style="width:30%;">
-              </div>
-            </div>
-            <span class="card-text text-uppercase" style="float:right; font-size:11px">30%</span>
-          </div>
-          <div class="card-footer text-center text-primary">
-            View more
           </div>
         </div>
-        <div class="card rcard">
-          <div class="card-body">
-            <h6 class="card-title text-center">Title</h6>
-            <div class="row text-center">
+        <div class="card-group">
+          <div class="card rcard">
+            <div class="card-body">
+              <h6 class="card-title text-center">Title</h6>
+              <div class="row text-center">
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">1000</p>
+                </div>
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">600</p>
+                </div>
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">400</p>
+                </div>
+              </div>
+              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+              <span class="card-text text-uppercase" style="float:right;">600/1000</span>
+              <div class="progress mb-1 mt-1 t_height">
+                <div class="progress-bar" role="progressbar" style="width:60%;">
+                </div>
+              </div>
+              <span class="card-text text-uppercase" style="float:right; font-size:11px">60%</span>
+            </div>
+            <div class="card-footer text-center text-primary">
+              View more
+            </div>
+          </div>
+          <div class="card rcard">
+            <div class="card-body">
+              <h6 class="card-title text-center">Title</h6>
+              <div class="row text-center">
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">1000</p>
+                </div>
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">400</p>
+                </div>
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">600</p>
+                </div>
+              </div>
+              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+              <span class="card-text text-uppercase" style="float:right;">400/1000</span>
+              <div class="progress mb-1 mt-1 t_height">
+                <div class="progress-bar" role="progressbar" style="width:40%;">
+                </div>
+              </div>
+              <span class="card-text text-uppercase" style="float:right; font-size:11px">40%</span>
+            </div>
+            <div class="card-footer text-center text-primary">
+              View more
+            </div>
+          </div>
+          <div class="card rcard">
+            <div class="card-body">
+              <h6 class="card-title text-center">Title</h6>
+              <div class="row text-center">
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">1000</p>
+                </div>
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">300</p>
+                </div>
+                <div class="col">
+                  <span style="font-size:10px;">Metric
+                    <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
+                      <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                  </span>
+                  <p style="font-size:20px; color:#333;">700</p>
+                </div>
+              </div>
+              <span class="card-text text-uppercase" style="font-size:12px;">Metric</span>
+              <span class="card-text text-uppercase" style="float:right;">300/1000</span>
+              <div class="progress mb-1 mt-1 t_height">
+                <div class="progress-bar" role="progressbar" style="width:30%;">
+                </div>
+              </div>
+              <span class="card-text text-uppercase" style="float:right; font-size:11px">30%</span>
+            </div>
+            <div class="card-footer text-center text-primary">
+              View more
+            </div>
+          </div>
+          <div class="card rcard">
+            <div class="card-body">
+              <h6 class="card-title text-center">Title</h6>
+              <div class="row text-center">
+                <div class="col">
+                  <span style="font-size:13px;">Metric
+                    <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                    <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
+                  </svg> -->
+                </span>
+                <p style="font-size:26px; color:#333;">1</p>
+              </div>
               <div class="col">
                 <span style="font-size:13px;">Metric
-                  <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the total target">
+                  <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
                   <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
                 </svg> -->
               </span>
@@ -577,24 +602,16 @@
             </div>
             <div class="col">
               <span style="font-size:13px;">Metric
-                <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="This is the addressable target figure after taking into account the stipulated criteria">
+                <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
                 <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
               </svg> -->
             </span>
-            <p style="font-size:26px; color:#333;">1</p>
+            <p style="font-size:26px; color:#333;">0</p>
           </div>
-          <div class="col">
-            <span style="font-size:13px;">Metric
-              <!-- <svg class="label-tip" data-toggle="tooltip" data-placement="top" title="his is the target figure that is not addressable due to the stipulated criteria">
-              <use xlink:href="icon/symbol-defs.svg#icon-info"></use>
-            </svg> -->
-          </span>
-          <p style="font-size:26px; color:#333;">0</p>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 </div>
 </section>

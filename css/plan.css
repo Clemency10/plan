@@ -255,9 +255,10 @@ a:hover, a:focus, a:active {
     /*display: inline-block;*/
     height: 50px;
     width: 50px;
-    margin-right :20px;
-    margin-top :20px;
-    margin-bottom :20px;
+    margin-right :;
+    margin-top :;
+    margin-bottom :;
+    horizontal-align: center;
 }
 
 .slider {
@@ -347,6 +348,14 @@ a:hover, a:focus, a:active {
     cursor: pointer;
     margin-top: -5px;
 }
+
+/* .ui-slider-handle:focus {
+    outline: none;
+    outline-color: none;
+    outline-style: none;
+    outline-width: none;
+} */
+
 .ui-slider .ui-slider-range {
     position: absolute;
     z-index: 1;
@@ -363,22 +372,31 @@ a:hover, a:focus, a:active {
     filter: inherit;
 }
 
+.ui-slider-handle:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+    outline-color: ;
+    outline-style: ;
+    outline-width: ;
+}
+
 .ui-slider-horizontal {
     height: 5px;
+    background: #e0e0e0;
+    border: 0px;
 }
 
 .ui.button {
     display: inline-block;
     padding: 0 10px;
-    height: 20px;
-    font-size: 12px;
+    height: 24px;
+    font-size: 13px;
     line-height: 20px;
     border-radius: 25px;
     background-color: #f1f1f1;
     color: #666666;
     border-color: #f1f1f1;
-    margin-right :20px;
-    margin-bottom :20px;
+    margin-right :;
+    margin-bottom :;
     font-family: 'Open Sans', serif;
     font-weight: normal;
 }
