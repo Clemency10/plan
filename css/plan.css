@@ -24,13 +24,10 @@ h6 {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 3.5rem;
     line-height: 5.5rem;
 }
 
-h2 {
-    font-size: 3.5rem;
-}
 
 p.header {
     /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
@@ -250,9 +247,6 @@ a:hover, a:focus, a:active {
     /*display: inline-block;*/
     height: 50px;
     width: 50px;
-    margin-right :;
-    margin-top :;
-    margin-bottom :;
     horizontal-align: center;
 }
 
@@ -314,19 +308,6 @@ a:hover, a:focus, a:active {
     border-color:none;
 }
 
-/* .slider {
-    -webkit-appearance: none;
-    width: 300px;
-    height: 5px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    margin-top: 20px;
-} */
-
 /*square slide handle*/
 .ui-slider .ui-slider-handle {
     position: absolute;
@@ -343,13 +324,6 @@ a:hover, a:focus, a:active {
     cursor: pointer;
     margin-top: -5px;
 }
-
-/* .ui-slider-handle:focus {
-    outline: none;
-    outline-color: none;
-    outline-style: none;
-    outline-width: none;
-} */
 
 .ui-slider .ui-slider-range {
     position: absolute;
@@ -369,9 +343,6 @@ a:hover, a:focus, a:active {
 
 .ui-slider-handle:focus {
     outline: -webkit-focus-ring-color auto 0px;
-    outline-color: ;
-    outline-style: ;
-    outline-width: ;
 }
 
 .ui-slider-horizontal {
@@ -390,8 +361,6 @@ a:hover, a:focus, a:active {
     background-color: #f1f1f1;
     color: #666666;
     border-color: #f1f1f1;
-    margin-right :;
-    margin-bottom :;
     font-family: 'Open Sans', serif;
     font-weight: normal;
 }
